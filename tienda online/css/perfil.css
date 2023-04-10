@@ -162,6 +162,11 @@
     background: linear-gradient(45deg, #FF2DFD, #40A7FF);
 }
 
+.enlace{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* adactacion a dispositivos */
 @media (max-width: 750px) {
     .seccion-perfil-usuario .lista-datos {
