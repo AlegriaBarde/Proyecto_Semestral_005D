@@ -35,7 +35,7 @@ section {
 }
 
 .heading {
-  background: #244d4d;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,20 +52,20 @@ section {
 .heading h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #080808;
 }
 
 .heading p {
-  color: #fff;
+  color: #0c0c0c;
   font-size: 2rem;
 }
 
 .heading p span {
-  color: yellow;
+  color: rgb(0, 8, 5);
 }
 
 .heading p a {
-  color: #fff;
+  color: #050505;
 }
 
 .heading p a:hover {
@@ -114,7 +114,15 @@ section {
 .btn:hover {
   background: #316868;
 }
-
+.agregar{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  font-size: 1.4rem;
+  background: #244d4d;
+  color: #fff;
+  cursor: pointer;
+}
 .header {
   padding: 2rem 9%;
   position: -webkit-sticky;
