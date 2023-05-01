@@ -9,6 +9,9 @@
     <!-- font link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!-- Libreria JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <!-- css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -134,26 +137,26 @@
 
 
 
-    <div class="wrapper">
+    <div class="wrapper" id="form">
         <div class="title">
-          Registrate
+          Registro
         </div>
         <div class="form">
            <div class="inputfield">
               <label>Nombre</label>
-              <input type="text" class="input">
+              <input type="text" class="input" id="name">
            </div>  
             <div class="inputfield">
               <label>Apellido</label>
-              <input type="text" class="input">
+              <input type="text" class="input" id="lastname">
            </div>  
            <div class="inputfield">
               <label>Contraseña</label>
-              <input type="password" class="input">
+              <input type="password" class="input" id="password">
            </div>  
           <div class="inputfield">
               <label>Confirmar Contraseña</label>
-              <input type="password" class="input">
+              <input type="password" class="input" id="comfirpass">
            </div> 
             <div class="inputfield">
               <label>Genero</label>
@@ -167,19 +170,19 @@
            </div> 
             <div class="inputfield">
               <label>Email</label>
-              <input type="text" class="input">
+              <input type="text" class="input" id="email">
            </div> 
           <div class="inputfield">
               <label>Número de telefono</label>
-              <input type="text" class="input">
+              <input type="text" class="input" id="cell">
            </div> 
           <div class="inputfield">
               <label>Dirección</label>
-              <textarea class="textarea"></textarea>
+              <textarea class="textarea" id="street"></textarea>
            </div> 
           <div class="inputfield">
               <label>Codigo Postal</label>
-              <input type="text" class="input">
+              <input type="text" class="input" id="postalcode">
            </div> 
           <div class="inputfield terms">
               <label class="check">
@@ -189,7 +192,7 @@
               <p>Acepto Terminos y Condiciones</p>
            </div> 
           <div class="inputfield">
-            <input type="submit" value="Registrarse" class="btn">
+            <input type="submit" value="Registrarse" class="btn btnAction">
           </div>
         </div>
     </div>
@@ -266,6 +269,9 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+
+<!-- Script validacion -->
+<script src="js/validacion.js"></script>
     
 </body>
 </html>
