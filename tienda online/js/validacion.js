@@ -1,8 +1,13 @@
+var input = document.getElementById('name');
+input.oninvalid = function(event) {
+    event.target.setCustomValidity('Solo Letras')
+}
+
+
 $(document).ready(function (){
     //Validacion de Campos Vacios
-
     var name, lastname, password, comfirpass, email, cell, street, postalcode;
-    let passRegex = /^[a-zA-Z0-9._-]/
+    
     $(".btnAction").on('click',function(){
         name = $("#name").val();
         lastname = $('#lastname').val();
@@ -12,6 +17,7 @@ $(document).ready(function (){
         cell = $("#cell").val();
         street = $("#street").val();
         postalcode = $("#postalcode").val();
+
         if(name.length == 0 || lastname.length == 0 || password.length == 0 || comfirpass.length == 0 || email.length == 0 || cell.length == 0 || street.length == 0 || postalcode.length == 0){
             alert("Campos Sin Rellenar.");
         }
@@ -21,7 +27,7 @@ $(document).ready(function (){
         else if(password.length > 12){
             alert("La contraseña no debe superar los 12 caracteres")
         }
-        else if(!passRegex.test($('#password').val)){
+        else if(!validar.test($('#password').val)){
             alert("La contraseña debe contener numeros, caracteres, minuscula y mayuscula")
         }
 
@@ -29,27 +35,13 @@ $(document).ready(function (){
             alert('El correo electrónico introducido es invalido.');
         }else{
             alert("Registro Completo");
+            $("#form")[0].reset();
         }
     })
-
-
-    $("#form").submit(function (e){
-        e.preventDefault();
-        var nombre = $("#name").val();
-        var apellido = $("#lastname").val();
-        var contraseña = $("#password").val();
-        var confcontraseña = $("#comfirpass").val();
-        var email = $("#email").val();
-        var celular = $("#cell").val();
-        var direccion = $("#street").val();
-        var postal = $("#postalcode").val();
-
-        var msjMostrar = "";
-        let enviar = false;
-
-        $("#form").validate(
-            
-        );
-
-    })
 })
+
+function validar() {
+    console.log('Registrado');
+    FormData.reset();
+    return true;
+}
