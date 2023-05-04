@@ -1,3 +1,5 @@
+/* Efectos visuales de los Botones */ 
+
 let closer = document.querySelector('#closer');
 
 closer.onclick = () =>{
