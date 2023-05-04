@@ -158,7 +158,7 @@ onkeypress="console.log(event.charCode) Muestra el codigo del caracter en consol
         <div class="form">
            <div class="inputfield">
               <label>Nombre</label>
-              <input type="text" class="input" id="name" pattern="[a-z][A-Z]{1,15}" title="Solo Letras">
+              <input type="text" class="input" id="name" pattern="[a-z][A-Z]{1,15}" title="Solo Letras" onkeypress="return ((event.charCode >= 65 && event.charCode >= 90) || (event.charCode >= 97 && event.charCode >= 122))">
            </div>  
             <div class="inputfield">
               <label>Apellido</label>
@@ -166,7 +166,7 @@ onkeypress="console.log(event.charCode) Muestra el codigo del caracter en consol
            </div>  
            <div class="inputfield">
               <label>Contraseña</label>
-              <input type="password" class="input" id="password"  title="La contraseña debe tener(a,A,0,*)" pattern="(?=.\d)(?=.[a-z])(?=.\W)(?!.*\s)">
+              <input type="password" class="input" id="password"  title="La contraseña debe tener(a,A,0,*)" pattern required="(?=.\d)(?=.[a-z])(?=.\W)(?!.*\s)">
            </div>  
           <div class="inputfield">
               <label>Confirmar Contraseña</label>
@@ -183,7 +183,7 @@ onkeypress="console.log(event.charCode) Muestra el codigo del caracter en consol
               </div>
            </div> 
             <div class="inputfield">
-              <label>Email</label>
+              <label>Correo Electronico</label>
               <input type="text" class="input" id="email">
            </div> 
           <div class="inputfield">
