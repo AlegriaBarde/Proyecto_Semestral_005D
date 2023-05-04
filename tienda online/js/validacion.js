@@ -27,6 +27,9 @@ $(document).ready(function (){
         else if(password.length > 12){
             alert("La contraseña no debe superar los 12 caracteres")
         }
+        else if(comfirpass != password){
+            alert("Las contraseñas no coinciden.")
+        }
         else if(!validar.test($('#password').val)){
             alert("La contraseña debe contener numeros, caracteres, minuscula y mayuscula")
         }
