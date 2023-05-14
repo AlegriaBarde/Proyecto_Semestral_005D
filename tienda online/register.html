@@ -188,7 +188,7 @@ onkeypress="console.log(event.charCode) Muestra el codigo del caracter en consol
            </div> 
           <div class="inputfield">
               <label>Número de telefono</label>
-              <input type="text" class="input" id="cell">
+              <input type="text" class="input" id="cell" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
            </div> 
           <div class="inputfield">
               <label>Dirección</label>
@@ -196,7 +196,7 @@ onkeypress="console.log(event.charCode) Muestra el codigo del caracter en consol
            </div> 
           <div class="inputfield">
               <label>Codigo Postal</label>
-              <input type="text" class="input" id="postalcode">
+              <input type="text" class="input" id="postalcode" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
            </div> 
           <div class="inputfield terms">
               <label class="check">
