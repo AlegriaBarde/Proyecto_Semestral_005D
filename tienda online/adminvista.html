@@ -135,17 +135,22 @@
             <div>
                 <form>
                     <div>
+                    <h1> <label for="Nombre">Agregar Nombre:</label></h1> 
+                    <input type="text" name="nombre" id="nombre" class="clr" > 
+                    <br>
                     <h2><label for="imagen">Agregar imagen:</label></h2>
                     <input type="file" id="imagen" name="imagen"><br><br>
                     </div>
                     <div>
                     <h1> <label for="descripcion">Agregar Descripción:</label></h1>
                     <br>
-                    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="50" class="clr"></textarea><br><br>
                     </div>
                     <div>
-                    <h1><label for="precio">Precio:</label></h1>
-                    <input type="number" id="precio" name="precio"><br><br>
+                        <form onsubmit="return validarPrecio()">
+                            <h1><label for="precio">Precio:</label> </h1>
+                            <input type="number" name="precio" id="precio">
+                        </form>
                     </div>
                     <a href="#" class="agregar">Agregar producto</a>
                     

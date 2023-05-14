@@ -11,7 +11,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(#B873FF, transparent);
+    background: linear-gradient(transparent, transparent);
     margin-bottom: 1.25rem;
 }
 
@@ -20,8 +20,12 @@
     position: relative;
     width: 90%;
     height: 17rem;
-    background-image: linear-gradient(45deg, #BC3CFF, #317FFF);
+    background-image: linear-gradient(45deg, #889288, #90ad90);
     border-radius: 0 0 20px 20px;
+}
+
+.l_clr {
+    color: #000000;
 }
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
@@ -31,7 +35,7 @@
     border: 0;
     border-radius: 8px;
     padding: 12px 25px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
     cursor: pointer;
 }

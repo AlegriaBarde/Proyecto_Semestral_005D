@@ -153,63 +153,63 @@ onkeypress="console.log(event.charCode) Muestra el codigo del caracter en consol
 
     <div class="wrapper" id="form">
         <div class="title">
-          Registro
+        Registro
         </div>
         <div class="form">
-           <div class="inputfield">
-              <label>Nombre</label>
-              <input type="text" class="input" id="name" pattern="[a-z][A-Z]{1,15}" title="Solo Letras" onkeypress="return ((event.charCode >= 65 && event.charCode >= 90) || (event.charCode >= 97 && event.charCode >= 122))">
-           </div>  
+        <div class="inputfield">
+            <label>Nombre</label>
+            <input type="text" class="input" id="name" pattern="[a-z][A-Z]{1,15}" title="Solo Letras" onkeypress="return ((event.charCode >= 65 && event.charCode >= 90) || (event.charCode >= 97 && event.charCode >= 122))">
+        </div>  
             <div class="inputfield">
-              <label>Apellido</label>
-              <input type="text" class="input" id="lastname" onkeypress="return ((event.charCode >= 65 && event.charCode >= 90) || (event.charCode >= 97 && event.charCode >= 122))">
-           </div>  
-           <div class="inputfield">
-              <label>Contraseña</label>
-              <input type="password" class="input" id="password"  title="La contraseña debe tener(a,A,0,*)" pattern required="(?=.\d)(?=.[a-z])(?=.\W)(?!.*\s)">
-           </div>  
-          <div class="inputfield">
-              <label>Confirmar Contraseña</label>
-              <input type="password" class="input" id="comfirpass">
-           </div> 
+            <label>Apellido</label>
+            <input type="text" class="input" id="lastname" onkeypress="return ((event.charCode >= 65 && event.charCode >= 90) || (event.charCode >= 97 && event.charCode >= 122))">
+        </div>  
+        <div class="inputfield">
+            <label>Contraseña</label>
+            <input type="password" class="input" id="password"  title="La contraseña debe tener(a,A,0,*)" pattern required="(?=.\d)(?=.[a-z])(?=.\W)(?!.*\s)">
+        </div>  
+        <div class="inputfield">
+            <label>Confirmar Contraseña</label>
+            <input type="password" class="input" id="comfirpass">
+        </div> 
             <div class="inputfield">
-              <label>Genero</label>
-              <div class="custom_select">
+            <label>Genero</label>
+            <div class="custom_select">
                 <select>
-                  <option value="">Seleciona</option>
-                  <option value="male">Maculino</option>
-                  <option value="female">Femenino</option>
+                <option value="">Seleciona</option>
+                <option value="male">Maculino</option>
+                <option value="female">Femenino</option>
                 </select>
-              </div>
-           </div> 
+            </div>
+        </div> 
             <div class="inputfield">
-              <label>Correo Electronico</label>
-              <input type="text" class="input" id="email">
-           </div> 
-          <div class="inputfield">
-              <label>Número de telefono</label>
-              <input type="text" class="input" id="cell" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-           </div> 
-          <div class="inputfield">
-              <label>Dirección</label>
-              <textarea class="textarea" id="street"></textarea>
-           </div> 
-          <div class="inputfield">
-              <label>Codigo Postal</label>
-              <input type="text" class="input" id="postalcode" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-           </div> 
-          <div class="inputfield terms">
-              <label class="check">
+            <label>Correo Electronico</label>
+            <input type="text" class="input" id="email">
+        </div> 
+        <div class="inputfield">
+            <label>Número de telefono</label>
+            <input type="text" class="input" id="cell" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+        </div> 
+        <div class="inputfield">
+            <label>Dirección</label>
+            <textarea class="textarea" id="street"></textarea>
+        </div> 
+        <div class="inputfield">
+            <label>Codigo Postal</label>
+            <input type="text" class="input" id="postalcode" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+        </div> 
+        <div class="inputfield terms">
+            <label class="check">
                 <input type="checkbox">
                 <span class="checkmark"></span>
-              </label>
-              <p>Acepto Terminos y Condiciones</p>
-              <br>
-           </div> 
-           <span id="mensaje"></span>
-          <div class="inputfield">
+            </label>
+            <p>Acepto Terminos y Condiciones</p>
+            <br>
+        </div> 
+        <span id="mensaje"></span>
+        <div class="inputfield">
             <input type="submit" onclick="validar()" value="Registrarse" class="btn btnAction">
-          </div>
+        </div>
         </div>
     </div>
 

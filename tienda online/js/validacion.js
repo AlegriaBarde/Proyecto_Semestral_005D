@@ -42,6 +42,15 @@ $(document).ready(function (){
         }
     })
 })
+function validarPrecio() {
+    var precio = document.getElementById("precio").value;
+    if (precio < 0) {
+    alert("El precio no puede ser negativo.");
+    return false;
+    }
+    return true;
+}
+
 
 function validar() {
     console.log('Registrado');

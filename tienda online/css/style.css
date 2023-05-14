@@ -101,6 +101,10 @@ section {
   color: #244d4d;
 }
 
+.clr {
+  background-color: rgb(226, 226, 223);
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
